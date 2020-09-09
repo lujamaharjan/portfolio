@@ -8,6 +8,7 @@ fetch("https://api.github.com/users/lujamaharjan")
 	document.getElementById('profile-image').src= data['avatar_url'];
 	document.getElementById('aboutp').textContent = introduction;
 	document.getElementById('checkme').href = data['html_url']; 
+	console.log(data)
 });
 
 /** for pulling repository data from github **/
